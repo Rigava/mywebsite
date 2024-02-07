@@ -20,5 +20,5 @@ from sailor import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("",views.demo),
+    path("",views.home,name ='sailor-home'),
 ]
