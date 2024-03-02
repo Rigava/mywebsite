@@ -18,7 +18,7 @@ def home(request):
     context = {
         'posts':Post.objects.all()
     }
-    return render(request,'main.html',context)
+    return render(request,'sailor/main.html',context)
 
 def about(request):
-    return render(request,'about.html')
+    return render(request,'sailor/about.html')

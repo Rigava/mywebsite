@@ -17,9 +17,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from sailor import views
+from users import views as user_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("",views.home,name ='sailor-home'),
-    path("/about",views.about,name ='sailor-about'),
+    path("about/",views.about,name ='sailor-about'),
+    path('register/', user_views.register, name='register'),
 ]
