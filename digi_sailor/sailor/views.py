@@ -16,7 +16,7 @@ class PostListView(ListView):
     template_name = 'sailor/main.html' # as we are using existing main.html template else will need to create in format <app>/<model>_<viewtype>.html 
     context_object_name ='posts' # as django takes variable in object format will need to provide this
     ordering = ['-date_posted']
-    paginate_by = 3
+    paginate_by = 6
 
 class UserPostListView(ListView):
     model = Post
